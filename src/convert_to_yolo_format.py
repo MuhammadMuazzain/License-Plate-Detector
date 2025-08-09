@@ -38,7 +38,7 @@ def convert_to_yolo_format(xml_file, img_shape):
 # Convert all annotations
 for xml_file in os.listdir(annotations_dir):
     xml_path = os.path.join(annotations_dir, xml_file)
-    img_path = os.path.join(images_dir, xml_file.replace('.xml', '.png'))  # or .jpg
+    img_path = os.path.join(images_dir, xml_file.replace('.xml', '.png', '.jpg'))  
 
     img_shape = Image.open(img_path).size
     yolo_format = convert_to_yolo_format(xml_path, img_shape)

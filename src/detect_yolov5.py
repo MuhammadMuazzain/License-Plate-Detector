@@ -10,5 +10,5 @@ detect.run(
     source=images_path,
     weights=weights_path,
     imgsz=640,
-    conf_thres=0.25
+    conf_thres=0.27
 )
